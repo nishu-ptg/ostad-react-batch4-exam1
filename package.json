@@ -1,0 +1,14 @@
+{
+  "name": "exam1",
+  "version": "1.0.0",
+  "description": "Ostad Tailwind Batch-4: Exam-1 (HireGo Figma to HTML)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ali Nishu",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
