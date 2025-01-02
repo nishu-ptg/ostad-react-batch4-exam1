@@ -9,9 +9,82 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <header class="bg-white">
+      <div class="container mx-auto">
+        <div class="flex items-center">
+          <h1 class="text-3xl font-semibold"><a href="#">HireGo</a></h1>
+          <nav class="flex justify-between flex-1">
+            <ul id="main-nav" class="flex pl-4 font-semibold">
+              <li>
+                <a href="#">
+                  Products
+                  <i class="ml-2 fa-solid fa-angle-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Solutions
+                  <i class="ml-2 fa-solid fa-angle-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Why HireGo
+                  <i class="ml-2 fa-solid fa-angle-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#"> Pricing </a>
+              </li>
+              <li>
+                <a href="#">
+                  Recources
+                  <i class="ml-2 fa-solid fa-angle-down"></i>
+                </a>
+              </li>
+            </ul>
+            <ul class="flex items-center space-x-2">
+              <li>
+                <button
+                  class="px-5 py-1 border rounded-full border-black/40 hover:border-2 hover:bg-gray-100"
+                >
+                  <i
+                    class="mr-1 fa-solid fa-earth-americas relative top-[0.07rem] text-black/80"
+                  ></i>
+                  English
+                  <i
+                    class="fa-solid fa-angle-down relative top-[0.07rem] ml-1 text-black/80"
+                  ></i>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="px-5 py-1 border rounded-full border-black/40 hover:border-2 hover:bg-gray-100"
+                >
+                  Log in
+                </button>
+              </li>
+              <li>
+                <button
+                  class="px-5 py-1 text-white bg-black border border-black rounded-full hover:border-2"
+                >
+                  Request a demo
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
