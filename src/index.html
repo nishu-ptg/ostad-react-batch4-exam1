@@ -19,6 +19,7 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- header section -->
     <header class="bg-white">
       <div class="container mx-auto">
         <div class="flex items-center">
@@ -56,7 +57,7 @@
             <ul class="flex items-center space-x-2">
               <li>
                 <button
-                  class="px-5 py-1 border rounded-full border-black/40 hover:border-2 hover:bg-gray-100"
+                  class="px-5 py-1 border rounded-full border-black/40 hover:border-2 hover:bg-gray-100 whitespace-nowrap"
                 >
                   <i
                     class="mr-1 fa-solid fa-earth-americas relative top-[0.07rem] text-black/80"
@@ -69,14 +70,14 @@
               </li>
               <li>
                 <button
-                  class="px-5 py-1 border rounded-full border-black/40 hover:border-2 hover:bg-gray-100"
+                  class="px-5 py-1 border rounded-full border-black/40 hover:border-2 hover:bg-gray-100 whitespace-nowrap"
                 >
                   Log in
                 </button>
               </li>
               <li>
                 <button
-                  class="px-5 py-1 text-white bg-black border border-black rounded-full hover:border-2"
+                  class="px-5 py-1 text-white bg-black border border-black rounded-full hover:border-2 whitespace-nowrap"
                 >
                   Request a demo
                 </button>
@@ -86,5 +87,60 @@
         </div>
       </div>
     </header>
+
+    <!-- banner section -->
+    <div
+      class="grid grid-cols-1 gap-0 lg:grid-cols-2 bg-[#b0d8fc] justify-center text-center rounded-bl-[5rem]"
+    >
+      <div class="flex items-center justify-center">
+        <div class="flex flex-col text-left my-36">
+          <h1 class="text-6xl font-semibold scale-x-90">
+            HireGO is your <br />
+            all-in-one <br />
+            Global People Platform
+          </h1>
+
+          <div class="ml-[5%]">
+            <ul class="my-4 text-lg">
+              <li>
+                <p>
+                  <i
+                    class="mr-1 text-yellow-200 fa-regular fa-circle-check"
+                  ></i>
+                  <span class="text-gray-950">
+                    G3's Leader in global employment platforms
+                  </span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i
+                    class="mr-1 text-yellow-200 fa-regular fa-circle-check"
+                  ></i>
+                  <span class="text-gray-950">
+                    90% customer satisfaction rate
+                  </span>
+                </p>
+              </li>
+            </ul>
+            <button
+              class="px-6 py-3 text-white bg-black rounded-full hover:bg-black/90 whitespace-nowrap"
+            >
+              Request a demo
+              <i
+                class="fa-solid fa-angle-right relative top-[0.07rem] ml-1"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <img
+          src="./assets/images/1.png"
+          alt="Hero Image"
+          class="object-contain w-full h-full"
+        />
+      </div>
+    </div>
   </body>
 </html>

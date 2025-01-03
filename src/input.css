@@ -4,7 +4,7 @@
 
 @layer base {
   * {
-    letter-spacing: -0.06rem;
+    @apply -tracking-[0.06em];
   }
 }
 
