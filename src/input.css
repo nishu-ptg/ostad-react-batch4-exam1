@@ -13,4 +13,9 @@
   #main-nav > li > a {
     @apply whitespace-nowrap px-4 hover:bg-slate-200/60 flex items-center h-16;
   }
+
+  /* logo showcase */
+  #logo-showcase li {
+    @apply flex items-center justify-center;
+  }
 }
