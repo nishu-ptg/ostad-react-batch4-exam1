@@ -6,6 +6,13 @@
   * {
     @apply -tracking-[0.06em];
   }
+
+  h3 {
+    @apply mb-5 text-4xl font-semibold tracking-normal leading-[3rem];
+  }
+  p {
+    @apply text-lg;
+  }
 }
 
 @layer components {
@@ -41,5 +48,9 @@
   }
   #hire-section-stat-area p {
     @apply text-gray-300 text-lg;
+  }
+
+  .round-btn {
+    @apply px-10 py-3 my-8 font-medium bg-white rounded-full text-gray-950 hover:bg-gray-200 whitespace-nowrap inline-block;
   }
 }
