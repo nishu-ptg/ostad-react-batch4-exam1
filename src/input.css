@@ -7,6 +7,9 @@
     @apply -tracking-[0.06em];
   }
 
+  h2 {
+    @apply mb-16 text-6xl font-medium text-center;
+  }
   h3 {
     @apply mb-5 text-4xl font-semibold tracking-normal leading-[3rem];
   }
@@ -71,5 +74,21 @@
   }
   .slider-control li.active {
     @apply bg-white;
+  }
+
+  #onboarding-steps li {
+    @apply bg-[#F5F5F5] rounded-[2.5rem] px-10 py-8 flex-center flex-1;
+  }
+  #onboarding-steps li > .v-wrapper {
+    @apply grid grid-cols-[auto_1fr] gap-4 w-full;
+  }
+  #onboarding-steps li > .v-wrapper > span {
+    @apply bg-purple-600 rounded-full aspect-square font-semibold text-white text-2xl w-10 flex-center;
+  }
+  #onboarding-steps li > .v-wrapper > div {
+    @apply flex-1;
+  }
+  #onboarding-steps li > .v-wrapper > div > h3 {
+    @apply text-3xl mb-3 mt-0.5;
   }
 }
