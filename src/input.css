@@ -91,4 +91,15 @@
   #onboarding-steps li > .v-wrapper > div > h3 {
     @apply text-3xl mb-3 mt-0.5;
   }
+
+  #social-media-icons a {
+    @apply w-10 aspect-square flex-center bg-white/10 rounded-full hover:bg-white/20 text-xl;
+  }
+
+  footer nav.sitemap li {
+    @apply mb-5;
+  }
+  footer nav li a {
+    @apply text-white/40 hover:text-white/60;
+  }
 }
