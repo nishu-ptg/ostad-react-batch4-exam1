@@ -50,7 +50,26 @@
     @apply text-gray-300 text-lg;
   }
 
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
   .round-btn {
     @apply px-10 py-3 my-8 font-medium bg-white rounded-full text-gray-950 hover:bg-gray-200 whitespace-nowrap inline-block;
+  }
+
+  .round-box {
+    @apply rounded-[2.5rem] p-12;
+  }
+
+  .slider-control a {
+    @apply w-10 aspect-square rounded-full bg-white/20 flex justify-center items-center text-white/30 hover:text-white/85 mx-6;
+  }
+
+  .slider-control li {
+    @apply w-3.5 aspect-square rounded-full bg-white/20 inline-block mx-2;
+  }
+  .slider-control li.active {
+    @apply bg-white;
   }
 }
