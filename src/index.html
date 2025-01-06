@@ -23,8 +23,10 @@
     <header>
       <div class="container mx-auto">
         <div class="flex items-center">
-          <h1 class="text-3xl font-semibold"><a href="#">HireGo</a></h1>
-          <nav class="flex justify-between flex-1">
+          <h1 class="text-3xl font-semibold my-4 mx-6 lg:m-0">
+            <a href="#">HireGo</a>
+          </h1>
+          <nav class="lg:flex justify-between flex-1 hidden">
             <ul id="main-nav" class="flex pl-4 font-semibold">
               <li>
                 <a href="#">
@@ -84,17 +86,20 @@
               </li>
             </ul>
           </nav>
+          <a href="#" class="ml-auto lg:hidden mx-6"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
         </div>
       </div>
     </header>
 
     <!-- banner section -->
     <div
-      class="grid grid-cols-1 gap-0 lg:grid-cols-2 bg-[#b0d8fc] justify-center text-center rounded-bl-[5rem]"
+      class="grid grid-cols-1 gap-0 lg:grid-cols-2 bg-[#b0d8fc] justify-center text-center rounded-b-[2.5rem] lg:rounded-bl-[5rem]"
     >
       <div class="flex items-center justify-center">
-        <div class="flex flex-col text-left my-36">
-          <h1 class="text-6xl font-semibold scale-x-90">
+        <div class="flex flex-col text-left mt-14 mb-6 lg:my-36">
+          <h1 class="text-4xl lg:text-6xl font-semibold scale-x-90">
             HireGO is your <br />
             all-in-one <br />
             Global People Platform
@@ -134,7 +139,7 @@
           </div>
         </div>
       </div>
-      <div class="">
+      <div class="mb-16 lg:m-0">
         <img
           src="./assets/images/1.png"
           alt="Hero Image"

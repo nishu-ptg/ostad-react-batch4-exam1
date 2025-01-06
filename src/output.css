@@ -882,6 +882,14 @@ footer nav li a:hover {
   margin: 0px;
 }
 
+.m-5 {
+  margin: 1.25rem;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
 .mx-72 {
   margin-left: 18rem;
   margin-right: 18rem;
@@ -910,6 +918,16 @@ footer nav li a:hover {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.my-14 {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .mb-0 {
@@ -964,6 +982,18 @@ footer nav li a:hover {
   margin-top: 1rem;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -974,6 +1004,10 @@ footer nav li a:hover {
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .aspect-square {
@@ -1111,6 +1145,11 @@ footer nav li a:hover {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-b-\[2\.5rem\] {
+  border-bottom-right-radius: 2.5rem;
+  border-bottom-left-radius: 2.5rem;
 }
 
 .rounded-bl-\[5rem\] {
@@ -1430,7 +1469,33 @@ footer nav li a:hover {
 }
 
 @media (min-width: 1024px) {
+  .lg\:m-0 {
+    margin: 0px;
+  }
+
+  .lg\:my-36 {
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:rounded-bl-\[5rem\] {
+    border-bottom-left-radius: 5rem;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
