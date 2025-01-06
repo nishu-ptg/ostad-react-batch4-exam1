@@ -630,8 +630,13 @@ p {
 
 /* logo showcase */
 
-#logo-showcase li {
+#logo-showcase > ul > li {
+  height: 100%;
+}
+
+#logo-showcase > ul > li > div {
   display: flex;
+  height: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -878,21 +883,65 @@ footer nav li a:hover {
   top: 0.07rem;
 }
 
+.right-\[35\%\] {
+  right: 35%;
+}
+
+.right-\[25\%\] {
+  right: 25%;
+}
+
+.right-\[20\%\] {
+  right: 20%;
+}
+
+.right-\[40\%\] {
+  right: 40%;
+}
+
+.right-\[10\%\] {
+  right: 10%;
+}
+
+.right-\[90\%\] {
+  right: 90%;
+}
+
+.right-\[80\%\] {
+  right: 80%;
+}
+
+.right-\[70\%\] {
+  right: 70%;
+}
+
+.right-\[75\%\] {
+  right: 75%;
+}
+
+.right-\[65\%\] {
+  right: 65%;
+}
+
+.left-\[65\%\] {
+  left: 65%;
+}
+
+.left-\[68\%\] {
+  left: 68%;
+}
+
+.right-\[68\%\] {
+  right: 68%;
+}
+
 .m-0 {
   margin: 0px;
 }
 
-.m-5 {
-  margin: 1.25rem;
-}
-
-.m-4 {
-  margin: 1rem;
-}
-
-.mx-72 {
-  margin-left: 18rem;
-  margin-right: 18rem;
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mx-auto {
@@ -905,11 +954,6 @@ footer nav li a:hover {
   margin-bottom: 5rem;
 }
 
-.my-36 {
-  margin-top: 9rem;
-  margin-bottom: 9rem;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -918,16 +962,6 @@ footer nav li a:hover {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-.my-14 {
-  margin-top: 3.5rem;
-  margin-bottom: 3.5rem;
 }
 
 .mb-0 {
@@ -954,6 +988,10 @@ footer nav li a:hover {
   margin-bottom: 1.25rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -970,6 +1008,10 @@ footer nav li a:hover {
   margin-left: 5%;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -978,20 +1020,16 @@ footer nav li a:hover {
   margin-top: 3rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
 .mt-14 {
   margin-top: 3.5rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.block {
+  display: block;
 }
 
 .inline-block {
@@ -1062,10 +1100,6 @@ footer nav li a:hover {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-7 {
-  grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
 .grid-cols-\[40\%_60\%\] {
@@ -1150,10 +1184,6 @@ footer nav li a:hover {
 .rounded-b-\[2\.5rem\] {
   border-bottom-right-radius: 2.5rem;
   border-bottom-left-radius: 2.5rem;
-}
-
-.rounded-bl-\[5rem\] {
-  border-bottom-left-radius: 5rem;
 }
 
 .border {
@@ -1353,6 +1383,11 @@ footer nav li a:hover {
   text-align: center;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1368,9 +1403,9 @@ footer nav li a:hover {
   line-height: 1;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-sm {
@@ -1384,10 +1419,6 @@ footer nav li a:hover {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.leading-\[3rem\] {
-  line-height: 3rem;
 }
 
 .leading-tight {
@@ -1469,13 +1500,30 @@ footer nav li a:hover {
 }
 
 @media (min-width: 1024px) {
+  .lg\:right-\[85\%\] {
+    right: 85%;
+  }
+
+  .lg\:left-\[85\%\] {
+    left: 85%;
+  }
+
   .lg\:m-0 {
     margin: 0px;
+  }
+
+  .lg\:mx-72 {
+    margin-left: 18rem;
+    margin-right: 18rem;
   }
 
   .lg\:my-36 {
     margin-top: 9rem;
     margin-bottom: 9rem;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:flex {
@@ -1490,12 +1538,30 @@ footer nav li a:hover {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
   .lg\:rounded-bl-\[5rem\] {
     border-bottom-left-radius: 5rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:leading-\[3rem\] {
+    line-height: 3rem;
   }
 }

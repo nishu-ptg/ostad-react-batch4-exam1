@@ -21,9 +21,9 @@
   <body class="bg-white">
     <!-- header section -->
     <header>
-      <div class="container mx-auto">
+      <div class="container mx-auto px-6">
         <div class="flex items-center">
-          <h1 class="text-3xl font-semibold my-4 mx-6 lg:m-0">
+          <h1 class="text-3xl font-semibold my-4">
             <a href="#">HireGo</a>
           </h1>
           <nav class="lg:flex justify-between flex-1 hidden">
@@ -86,7 +86,7 @@
               </li>
             </ul>
           </nav>
-          <a href="#" class="ml-auto lg:hidden mx-6"
+          <a href="#" class="ml-auto lg:hidden"
             ><i class="fa-solid fa-bars"></i
           ></a>
         </div>
@@ -106,13 +106,13 @@
           </h1>
 
           <div class="ml-[5%]">
-            <ul class="my-4 text-lg">
+            <ul class="my-4">
               <li>
                 <p>
                   <i
                     class="mr-1 text-yellow-200 fa-regular fa-circle-check"
                   ></i>
-                  <span class="text-gray-950">
+                  <span class="text-gray-950 text-base lg:text-lg">
                     G3's Leader in global employment platforms
                   </span>
                 </p>
@@ -122,7 +122,7 @@
                   <i
                     class="mr-1 text-yellow-200 fa-regular fa-circle-check"
                   ></i>
-                  <span class="text-gray-950">
+                  <span class="text-gray-950 text-base lg:text-lg">
                     90% customer satisfaction rate
                   </span>
                 </p>
@@ -150,45 +150,91 @@
 
     <!-- trusted by section -->
     <div>
-      <div class="container items-center mx-auto mb-5">
+      <div class="container items-center mx-auto mb-5 px-6">
         <h2
-          class="my-20 text-4xl font-semibold leading-[3rem] text-center text-gray-500 mx-72 tracking-normal"
+          class="my-20 text-2xl lg:text-4xl font-semibold leading-0 lg:leading-[3rem] text-center text-gray-500 mx-4 lg:mx-72 tracking-normal"
         >
           Trusted by <span class="text-gray-950">25,000+</span> companies from
           startups to enterprise
         </h2>
         <div id="logo-showcase" class="relative">
           <div
-            class="absolute top-0 bottom-0 left-0 right-[85%] bg-gradient-to-r from-white to-transparent"
+            class="absolute top-0 bottom-0 left-0 right-[68%] lg:right-[85%] bg-gradient-to-r from-white to-transparent"
           ></div>
           <div
-            class="absolute top-0 bottom-0 left-[85%] right-0 bg-gradient-to-r from-transparent to-white"
+            class="absolute top-0 bottom-0 left-[68%] lg:left-[85%] right-0 bg-gradient-to-r from-transparent to-white"
           ></div>
-          <ul class="grid grid-cols-7 my-20 gap-x-4 gap-y-10">
-            <li><img src="./assets/images/shopify.png" alt="shopify" /></li>
-            <li><img src="./assets/images/klarna.png" alt="klarna" /></li>
-            <li><img src="./assets/images/reddit.png" alt="reddit" /></li>
-            <li><img src="./assets/images/nike.png" alt="nike" /></li>
-            <li><img src="./assets/images/zapier.png" alt="zapier" /></li>
-            <li><img src="./assets/images/nu.png" alt="nu" /></li>
+          <ul class="grid grid-cols-3 lg:grid-cols-7 my-20 gap-x-4 gap-y-10">
             <li>
-              <img src="./assets/images/felly_belly.png" alt="jelly belly" />
+              <div><img src="./assets/images/shopify.png" alt="shopify" /></div>
             </li>
-            <li><img src="./assets/images/revolut.png" alt="revolut" /></li>
             <li>
-              <img src="./assets/images/forever_21.png" alt="forever 21" />
+              <div><img src="./assets/images/klarna.png" alt="klarna" /></div>
             </li>
-            <li><img src="./assets/images/redbull.png" alt="red bull" /></li>
-            <li>
-              <img
-                src="./assets/images/clavin_klein.png"
-                alt="calvin clavin klein"
-              />
+            <li class="block lg:hidden">
+              <div><img src="./assets/images/nu.png" alt="nu" /></div>
             </li>
-            <li><img src="./assets/images/intercom.png" alt="intercom" /></li>
-            <li><img src="./assets/images/hermes.png" alt="hermes" /></li>
             <li>
-              <img src="./assets/images/hello_fresh.png" alt="hello fresh" />
+              <div><img src="./assets/images/reddit.png" alt="reddit" /></div>
+            </li>
+            <li class="hidden lg:block">
+              <div><img src="./assets/images/nike.png" alt="nike" /></div>
+            </li>
+            <li class="hidden lg:block">
+              <div><img src="./assets/images/zapier.png" alt="zapier" /></div>
+            </li>
+            <li class="hidden lg:block">
+              <div><img src="./assets/images/nu.png" alt="nu" /></div>
+            </li>
+            <li class="hidden lg:block">
+              <div>
+                <img src="./assets/images/felly_belly.png" alt="jelly belly" />
+              </div>
+            </li>
+            <li>
+              <div><img src="./assets/images/revolut.png" alt="revolut" /></div>
+            </li>
+            <li class="hidden lg:block">
+              <div>
+                <img src="./assets/images/forever_21.png" alt="forever 21" />
+              </div>
+            </li>
+            <li class="hidden lg:block">
+              <div>
+                <img src="./assets/images/redbull.png" alt="red bull" />
+              </div>
+            </li>
+            <li class="hidden lg:block">
+              <div>
+                <img
+                  src="./assets/images/clavin_klein.png"
+                  alt="calvin clavin klein"
+                />
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="./assets/images/intercom.png" alt="intercom" />
+              </div>
+            </li>
+            <li class="hidden lg:block">
+              <div><img src="./assets/images/hermes.png" alt="hermes" /></div>
+            </li>
+            <li>
+              <div>
+                <img src="./assets/images/hello_fresh.png" alt="hello fresh" />
+              </div>
+            </li>
+            <li class="block lg:hidden">
+              <div><img src="./assets/images/zapier.png" alt="zapier" /></div>
+            </li>
+            <li class="block lg:hidden">
+              <div>
+                <img
+                  src="./assets/images/clavin_klein.png"
+                  alt="calvin clavin klein"
+                />
+              </div>
             </li>
           </ul>
         </div>
