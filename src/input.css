@@ -37,23 +37,23 @@
     @apply gap-6;
   }
   #hire-section-box-area .round-box {
-    @apply rounded-[2.5rem] p-12;
+    @apply rounded-[2rem] lg:rounded-[2.5rem] px-6 py-7 lg:p-12;
   }
   #hire-section-box-area .round-box h3 {
-    @apply mb-4 text-4xl font-semibold tracking-normal;
+    @apply mb-4 text-2xl lg:text-4xl font-semibold tracking-normal;
   }
   #hire-section-box-area .round-box p {
-    @apply text-lg;
+    @apply text-base lg:text-lg;
   }
   #hire-section-box-area .round-box button {
-    @apply px-10 py-3 my-8 font-medium bg-white rounded-full text-gray-950 hover:bg-gray-200 whitespace-nowrap;
+    @apply px-6 lg:px-10 py-3 mt-8 font-medium bg-white rounded-full text-gray-950 hover:bg-gray-200 whitespace-nowrap;
   }
 
   #hire-section-stat-area h4 {
-    @apply text-[5rem] font-semibold text-sky-300 leading-tight tracking-normal;
+    @apply text-6xl lg:text-[5rem] font-semibold text-sky-300 leading-tight tracking-normal;
   }
   #hire-section-stat-area p {
-    @apply text-gray-300 text-lg;
+    @apply text-gray-300 text-base lg:text-lg;
   }
 
   .flex-center {

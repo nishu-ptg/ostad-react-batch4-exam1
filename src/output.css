@@ -648,32 +648,55 @@ p {
 }
 
 #hire-section-box-area .round-box {
-  border-radius: 2.5rem;
-  padding: 3rem;
+  border-radius: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+@media (min-width: 1024px) {
+  #hire-section-box-area .round-box {
+    border-radius: 2.5rem;
+    padding: 3rem;
+  }
 }
 
 #hire-section-box-area .round-box h3 {
   margin-bottom: 1rem;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 600;
   letter-spacing: 0em;
 }
 
+@media (min-width: 1024px) {
+  #hire-section-box-area .round-box h3 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
 #hire-section-box-area .round-box p {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  #hire-section-box-area .round-box p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 #hire-section-box-area .round-box button {
   margin-top: 2rem;
-  margin-bottom: 2rem;
   white-space: nowrap;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   font-weight: 500;
@@ -686,8 +709,15 @@ p {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
 }
 
+@media (min-width: 1024px) {
+  #hire-section-box-area .round-box button {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
 #hire-section-stat-area h4 {
-  font-size: 5rem;
+  font-size: 3.75rem;
   font-weight: 600;
   line-height: 1.25;
   letter-spacing: 0em;
@@ -695,11 +725,24 @@ p {
   color: rgb(125 211 252 / var(--tw-text-opacity, 1));
 }
 
+@media (min-width: 1024px) {
+  #hire-section-stat-area h4 {
+    font-size: 5rem;
+  }
+}
+
 #hire-section-stat-area p {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 1024px) {
+  #hire-section-stat-area p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 .flex-center {
@@ -863,16 +906,16 @@ footer nav li a:hover {
   left: 0px;
 }
 
-.left-\[85\%\] {
-  left: 85%;
+.left-\[68\%\] {
+  left: 68%;
 }
 
 .right-0 {
   right: 0px;
 }
 
-.right-\[85\%\] {
-  right: 85%;
+.right-\[68\%\] {
+  right: 68%;
 }
 
 .top-0 {
@@ -881,58 +924,6 @@ footer nav li a:hover {
 
 .top-\[0\.07rem\] {
   top: 0.07rem;
-}
-
-.right-\[35\%\] {
-  right: 35%;
-}
-
-.right-\[25\%\] {
-  right: 25%;
-}
-
-.right-\[20\%\] {
-  right: 20%;
-}
-
-.right-\[40\%\] {
-  right: 40%;
-}
-
-.right-\[10\%\] {
-  right: 10%;
-}
-
-.right-\[90\%\] {
-  right: 90%;
-}
-
-.right-\[80\%\] {
-  right: 80%;
-}
-
-.right-\[70\%\] {
-  right: 70%;
-}
-
-.right-\[75\%\] {
-  right: 75%;
-}
-
-.right-\[65\%\] {
-  right: 65%;
-}
-
-.left-\[65\%\] {
-  left: 65%;
-}
-
-.left-\[68\%\] {
-  left: 68%;
-}
-
-.right-\[68\%\] {
-  right: 68%;
 }
 
 .m-0 {
@@ -947,6 +938,11 @@ footer nav li a:hover {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .my-20 {
@@ -992,6 +988,10 @@ footer nav li a:hover {
   margin-bottom: 1.5rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -1026,6 +1026,14 @@ footer nav li a:hover {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .block {
@@ -1068,6 +1076,18 @@ footer nav li a:hover {
   width: 100%;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1104,10 +1124,6 @@ footer nav li a:hover {
 
 .grid-cols-\[40\%_60\%\] {
   grid-template-columns: 40% 60%;
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1171,10 +1187,6 @@ footer nav li a:hover {
 
 .rounded-\[2\.5rem\] {
   border-radius: 2.5rem;
-}
-
-.rounded-\[5rem\] {
-  border-radius: 5rem;
 }
 
 .rounded-full {
@@ -1329,9 +1341,9 @@ footer nav li a:hover {
   padding-bottom: 0.25rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .py-24 {
@@ -1359,12 +1371,32 @@ footer nav li a:hover {
   padding-bottom: 2rem;
 }
 
-.pb-12 {
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .pb-24 {
   padding-bottom: 6rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .pl-4 {
@@ -1373,6 +1405,22 @@ footer nav li a:hover {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-left {
@@ -1500,12 +1548,20 @@ footer nav li a:hover {
 }
 
 @media (min-width: 1024px) {
+  .lg\:left-\[85\%\] {
+    left: 85%;
+  }
+
   .lg\:right-\[85\%\] {
     right: 85%;
   }
 
-  .lg\:left-\[85\%\] {
-    left: 85%;
+  .lg\:order-1 {
+    order: 1;
+  }
+
+  .lg\:order-2 {
+    order: 2;
   }
 
   .lg\:m-0 {
@@ -1517,9 +1573,18 @@ footer nav li a:hover {
     margin-right: 18rem;
   }
 
+  .lg\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
   .lg\:my-36 {
     margin-top: 9rem;
     margin-bottom: 9rem;
+  }
+
+  .lg\:mb-16 {
+    margin-bottom: 4rem;
   }
 
   .lg\:block {
@@ -1534,16 +1599,68 @@ footer nav li a:hover {
     display: none;
   }
 
+  .lg\:w-auto {
+    width: auto;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-7 {
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
 
+  .lg\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:rounded-\[5rem\] {
+    border-radius: 5rem;
+  }
+
   .lg\:rounded-bl-\[5rem\] {
     border-bottom-left-radius: 5rem;
+  }
+
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .lg\:py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .lg\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .lg\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .lg\:pb-12 {
+    padding-bottom: 3rem;
+  }
+
+  .lg\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .lg\:pt-5 {
+    padding-top: 1.25rem;
   }
 
   .lg\:text-4xl {
@@ -1561,7 +1678,16 @@ footer nav li a:hover {
     line-height: 1.75rem;
   }
 
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .lg\:leading-\[3rem\] {
     line-height: 3rem;
+  }
+
+  .lg\:-tracking-\[0\.06em\] {
+    letter-spacing: -0.06em;
   }
 }
