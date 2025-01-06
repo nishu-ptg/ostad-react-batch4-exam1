@@ -629,6 +629,54 @@ p {
 
 /* main-nav */
 
+@media (max-width: 1023px) {
+  header nav {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+  }
+
+  header nav ul > li {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 90%;
+    flex: 1 1 0%;
+  }
+
+  header nav ul > li > a,
+    header nav ul > li > button {
+    flex: 1 1 0%;
+  }
+
+  header nav ul > li > button {
+    margin-bottom: 1.25rem;
+  }
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  header nav ul {
+    flex-direction: row;
+  }
+}
+
+#main-nav > li {
+  display: block;
+  flex: 1 1 0%;
+}
+
+@media (min-width: 1024px) {
+  #main-nav > li {
+    display: inline-block;
+  }
+}
+
 #main-nav > li > a {
   display: flex;
   height: 4rem;
@@ -959,6 +1007,10 @@ footer nav li a:hover {
   top: 0.07rem;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -986,6 +1038,11 @@ footer nav li a:hover {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .my-6 {
@@ -1109,10 +1166,6 @@ footer nav li a:hover {
   max-width: 42rem;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
-}
-
 .grow {
   flex-grow: 1;
 }
@@ -1226,6 +1279,11 @@ footer nav li a:hover {
 
 .border-black\/40 {
   border-color: rgb(0 0 0 / 0.4);
+}
+
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity, 1));
 }
 
 .border-gray-600 {
@@ -1384,10 +1442,6 @@ footer nav li a:hover {
 
 .pb-8 {
   padding-bottom: 2rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
 }
 
 .pt-12 {
@@ -1600,6 +1654,10 @@ footer nav li a:hover {
     width: auto;
   }
 
+  .lg\:flex-1 {
+    flex: 1 1 0%;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1614,6 +1672,10 @@ footer nav li a:hover {
 
   .lg\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
   .lg\:rounded-\[5rem\] {
@@ -1655,6 +1717,10 @@ footer nav li a:hover {
 
   .lg\:pb-24 {
     padding-bottom: 6rem;
+  }
+
+  .lg\:pl-4 {
+    padding-left: 1rem;
   }
 
   .lg\:pt-0 {

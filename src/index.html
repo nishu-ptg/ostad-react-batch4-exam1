@@ -20,14 +20,14 @@
   </head>
   <body class="bg-white">
     <!-- header section -->
-    <header>
+    <header class="relative z-10">
       <div class="container mx-auto px-6">
         <div class="flex items-center">
           <h1 class="text-3xl font-semibold my-4">
             <a href="#">HireGo</a>
           </h1>
-          <nav class="lg:flex justify-between flex-1 hidden">
-            <ul id="main-nav" class="flex pl-4 font-semibold">
+          <nav class="hidden lg:flex lg:justify-between lg:flex-1 bg-white">
+            <ul id="main-nav" class="flex p-0 lg:pl-4 font-semibold">
               <li>
                 <a href="#">
                   Products
@@ -56,6 +56,7 @@
                 </a>
               </li>
             </ul>
+            <hr class="my-5 border-gray-400" />
             <ul class="flex items-center space-x-2">
               <li>
                 <button
@@ -86,7 +87,7 @@
               </li>
             </ul>
           </nav>
-          <a href="#" class="ml-auto lg:hidden"
+          <a href="#" id="main-nav-toggle" class="ml-auto lg:hidden"
             ><i class="fa-solid fa-bars"></i
           ></a>
         </div>
@@ -638,5 +639,15 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const elHeaderNavToggleBtn = document.getElementById("main-nav-toggle");
+      const elHeaderNav = document.querySelector("header nav");
+
+      elHeaderNavToggleBtn.addEventListener("click", () => {
+        // alert(elHeaderNav);
+        elHeaderNav.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>

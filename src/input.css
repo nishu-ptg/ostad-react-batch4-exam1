@@ -20,6 +20,27 @@
 
 @layer components {
   /* main-nav */
+  @media (max-width: 1023px) {
+    header nav {
+      @apply absolute top-[100%] left-0 right-0;
+    }
+    header nav ul > li {
+      @apply flex flex-1 w-[90%] mx-auto;
+    }
+    header nav ul > li > a,
+    header nav ul > li > button {
+      @apply flex-1;
+    }
+    header nav ul > li > button {
+      @apply mb-5;
+    }
+  }
+  header nav ul {
+    @apply flex flex-col lg:flex-row;
+  }
+  #main-nav > li {
+    @apply block lg:inline-block flex-1;
+  }
   #main-nav > li > a {
     @apply whitespace-nowrap px-4 hover:bg-slate-200/60 flex items-center h-16;
   }
