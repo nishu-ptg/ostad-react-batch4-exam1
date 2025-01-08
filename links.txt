@@ -1,0 +1,5 @@
+Figma:
+https://www.figma.com/design/pUAfXPIrA7vSOzoM9LJJmD/Tailwind-CSS-B-1
+
+Netlify:
+https://nishu-ostad-react-batch4-exam1.netlify.app/
