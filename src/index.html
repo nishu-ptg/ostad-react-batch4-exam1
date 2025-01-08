@@ -19,7 +19,7 @@
     />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="bg-white">
+  <body class="bg-white overflow-x-hidden">
     <!-- header section -->
     <header class="relative z-10">
       <div class="container-center">
@@ -27,7 +27,9 @@
           <h1 class="text-3xl my-4">
             <a href="#">HireGo</a>
           </h1>
-          <nav class="hidden lg:flex lg:justify-between lg:flex-1 bg-white">
+          <nav
+            class="lg:flex lg:justify-between lg:flex-1 bg-white translate-x-full lg:translate-x-0 opacity-0 lg:opacity-100 transition-all duration-400 ease-in-out"
+          >
             <ul id="main-nav" class="flex p-0 lg:pl-4 font-semibold">
               <li>
                 <a href="#">
@@ -656,7 +658,9 @@
 
       elHeaderNavToggleBtn.addEventListener("click", () => {
         // alert(elHeaderNav);
-        elHeaderNav.classList.toggle("hidden");
+        // elHeaderNav.classList.toggle("hidden");
+        elHeaderNav.classList.toggle("translate-x-full");
+        elHeaderNav.classList.toggle("opacity-0");
       });
 
       const slide = (num) => {
