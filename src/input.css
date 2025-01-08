@@ -7,6 +7,9 @@
     @apply -tracking-[0.06em];
   }
 
+  h1 {
+    @apply font-semibold;
+  }
   h2 {
     @apply mb-16 text-4xl lg:text-6xl font-medium text-center;
   }
@@ -19,6 +22,12 @@
 }
 
 @layer components {
+  .container-center {
+    @apply container mx-auto px-6 sm:px-0;
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
   /* main-nav */
   @media (max-width: 1023px) {
     header nav {
@@ -42,7 +51,7 @@
     @apply block lg:inline-block flex-1;
   }
   #main-nav > li > a {
-    @apply whitespace-nowrap px-4 hover:bg-slate-200/60 flex items-center h-16;
+    @apply whitespace-nowrap px-4 hover:bg-slate-200/60 flex-center h-12 lg:h-16 bg-black/5 lg:bg-white;
   }
 
   /* logo showcase */
